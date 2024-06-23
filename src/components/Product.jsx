@@ -13,8 +13,9 @@ export const Product = async () => {
 
 document.querySelector('#root').innerHTML = render(
     <div className="container">
-      <h2>{bylinky.name}</h2>
+      
       <main className="product-detail">
+      <h2>{bylinky.name}</h2>
       <img src={`http://localhost:4000${bylinky.img}`} alt={bylinky.name} className="detail-image" />
         <div className="details">
         <p><strong>Cena:</strong> {bylinky.price}</p>
